@@ -1,0 +1,3 @@
+# Example .hacx file for FraudGPT
+# Save a copy as `.hacx` in the project root and replace the placeholder with your API key.
+HacxGPT-API=YOUR_API_KEY_HERE

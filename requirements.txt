@@ -1,0 +1,5 @@
+openai
+colorama
+pwinput
+python-dotenv
+rich

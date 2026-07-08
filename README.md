@@ -78,4 +78,51 @@ The proliferation of this tool lowers the barrier to entry for cybercriminals (S
 
 -----
 
+## Run the local agent
+
+You can start the simple local assistant with:
+
+```bash
+python agent.py
+```
+
+It works without an API key and provides basic fallback responses.
+
 *End of Document*
+
+## Python install & run (developer)
+
+If you want to run the Python sources directly (developer mode), follow these steps:
+
+1. Install Python dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+2. (Optional) Create an API key file for the TUI app by copying the example and replacing the placeholder:
+
+```bash
+cp .hacx.example .hacx
+# edit .hacx and set HacxGPT-API to your key
+```
+
+3. Run the lightweight local agent (no API key required):
+
+```bash
+python agent.py
+```
+
+4. Run the full TUI app (requires API key in `.hacx`):
+
+```bash
+python fraudGPT.py
+```
+
+5. Run unit tests:
+
+```bash
+python -m unittest tests/test_agent.py
+```
+
+These instructions are intended for local development and testing.
